@@ -1,0 +1,163 @@
+<!-- COMPANY SECTION -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>Company Section</title>
+        <link rel="icon" type="image/png" href="media/code.png">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <a href="index.html"><img src="media/code.org.png" alt="CODE" class="logo"></a>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>Welcome to the Company Section</h1>
+            </div>
+            
+        </header>
+        
+        <!-- -----------------------------------------Company Login Form-------------------------------------------------------- -->
+        <section class="section-form">
+            <div class="row">
+                <h2>LOGIN</h2>
+            </div>
+
+            <form method="post" action="Company_Login.jsp" class="contact-form">
+                <!-------------------------------------------->
+                
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                    </div>
+                </div>
+                
+                <!-------------------------------------------->
+                
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="password" name="password" id="password" placeholder="Your password" required>
+                    </div>
+                </div>
+
+                <!------FORM ENDS-------------------------->
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="LogIn">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        
+        <!-- ----------------------------- REGISTRATION----------------------------------------- -->
+            <section class="section-form">
+                <div class="row">
+                    <h2>NEW COMPANY REGISTRATION</h2>
+                </div>
+
+                <form method="post" action="Company_Registration.jsp" class="contact-form">
+                    <!-------------------------------------------->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Name of the Company" required>
+                        </div>
+                    </div>
+                    <!-------------------------------------------->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Company email" required>
+                        </div>
+                    </div>
+                    <!-------------------------------------------->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="password" name="password" id="password" placeholder="Company password" required>
+                        </div>
+                    </div>
+                    <!-------------------------------------------->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="type">Type</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="type" id="type">
+                                <option value="service" selected>Service Based</option>
+                                <option value="porduct">Product Based</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <!------FORM ENDS-------------------------->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Sign Up">
+                        </div>
+                    </div>
+                    <!-------------------------------------------->
+
+                </form>
+        </section>
+        
+        
+        <!-- ---------------COPIED----------------- -->        
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2017 by Programmers Hub. All rights reserved.
+                </p>
+            </div>
+        </footer>
+     </body>
+</html>

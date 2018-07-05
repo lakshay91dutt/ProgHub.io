@@ -1,0 +1,281 @@
+<!-- ADMIN' DASHBOARD -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>Admin's Dashboard</title>
+        <link rel="icon" type="image/png" href="media/code.png">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <a href="index.html"><img src="media/code.org.png" alt="CODE" class="logo"></a>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>ADMINISTRATOR'S DASHBOARD</h1>
+                <a class="btn btn-ghost" href="#AQ">Add question</a>
+                <a class="btn btn-full" href="#DQ">Delete question</a>
+                <a class="btn btn-ghost" href="#SS">Search a Student</a>
+                <a class="btn btn-full" href="#SC">Search a Company</a>
+            </div>
+            
+        </header>
+        
+        <!-- --------------------------Add a question--------------------------- -->
+        <section class="section-form">
+            <div class="row">
+                <h2>Add a Question</h2>
+            </div>
+
+            <form method="post" id="AQ" action="Add_Question.jsp" class="contact-form">
+                <!-------------------------------------------->
+                
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="question">Question</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="question" id="question" placeholder="Complete Question" required>
+                    </div>
+                </div>
+                
+                <!-------------------------------------------->
+                
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="option1">Option a).</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="option1" id="option1" placeholder="First Option" required>
+                    </div>
+                </div>
+                <!-------------------------------------------->
+                
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="option2">Option b).</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="option2" id="option2" placeholder="Second Option" required>
+                    </div>
+                </div>
+                <!-------------------------------------------->
+                
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="option3">Option c).</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="option3" id="option3" placeholder="Third Option" required>
+                    </div>
+                </div>
+                <!-------------------------------------------->
+                
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="option4">Option d).</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="option4" id="option4" placeholder="Fourth Option" required>
+                    </div>
+                </div>
+                <!-------------------------------------------->
+                
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="option_c">Answer</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="option_c" id="option_c" placeholder="Correct Option" required>
+                    </div>
+                </div>
+                    <!-------------------------------------------->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="subject" id="subject">
+                                <option value="JAVA" selected>JAVA</option>
+                                <option value="CPP">CPP</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+                <!------FORM ENDS-------------------------->
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Proceed">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- -------------------------------------------------------------------- -->
+        
+        
+        <!-- --------------------------Delete a question--------------------------- -->
+        <section class="section-form">
+            <div class="row">
+                <h2>Delete a Question</h2>
+            </div>
+
+            <form method="post" id="DQ" action="Delete_Question.jsp" class="contact-form">
+                <!-------------------------------------------->
+                
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="question">Question</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="question" id="question" placeholder="Complete Question" required>
+                    </div>
+                </div>
+                
+                    <!-------------------------------------------->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="subject" id="subject">
+                                <option value="JAVA" selected>JAVA</option>
+                                <option value="CPP">CPP</option>
+                            </select>
+                        </div>
+                    </div>
+
+                <!------FORM ENDS-------------------------->
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Proceed">
+                    </div>
+                </div>
+            </form>
+        </section>
+        
+        <!-- -------------------------------------------------------------------- -->
+        
+        
+        <!-- --------------------------Search Student--------------------------- -->
+        <section class="section-form">
+            <div class="row">
+                <h2>Search Student</h2>
+            </div>
+
+            <form name="student" method="post" id="SS" action="Search_Student_All.jsp" class="contact-form">
+        	<!-------------------------------------------->
+            	<div class="row">
+               		 <div class="col span-1-of-3">
+               		      <label for="task">Search By</label>
+				     </div>
+			  		<div class="col span-2-of-3">
+	                	<select name="task" id="task">
+	                    	<option value="email">Email</option>
+	                        <option value="name">Name</option>
+	                        <option value="subject">Subject</option>
+	                        <option value="all" selected>All students</option>
+	                    </select>
+	                </div>
+                </div>
+                <!------FORM ENDS-------------------------->
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Proceed">
+                    </div>
+                </div>
+            </form>
+        </section>
+        
+        <!-- -------------------------------------------------------------------- -->
+        
+        
+        <!-- --------------------------Search Company--------------------------- -->
+        <section class="section-form">
+            <div class="row">
+                <h2>Search Company</h2>
+            </div>
+
+            <form method="post" id="SC" action="Search_Company.jsp" class="contact-form">
+                <!-------------------------------------------->
+                
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="company">Name of Company</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="company" id="company" placeholder="Name of the Company" required>
+                    </div>
+                </div>
+
+        
+        
+        
+                <!------FORM ENDS-------------------------->
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Proceed">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- -------------------------------------------------------------------- -->
+        
+        
+        <!-- -------------------------------COPIED------------------------------- -->        
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2017 by Programmers Hub. All rights reserved.
+                </p>
+            </div>
+        </footer>
+        
+   <!-- -------------------------------------------------------------------- --> 
+
+    </body>
+</html>
+
